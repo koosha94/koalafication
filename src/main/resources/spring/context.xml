@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="chimp.service.context.DefaultServiceContext" />
+    <bean class="chimp.ui.api.context.DefaultFormContext" id="formContext"/>
+    <bean class="chimp.ui.api.DefaultRunner" id="runner">
+        <constructor-arg index="0" ref="loginForm"/>
+        <constructor-arg index="1" ref="callback" />
+    </bean>
+
+    <bean id="callback" class="chimp.business.DefaultShutdownCallback" />
+
+    <!-- SERVICE -->
+    <bean class="chimp.service.security.AuthenticationServiceProvider" />
+
+    <!-- FORM -->
+    <bean id="myForm" class="chimp.ui.test.MyForm" />
+    <bean id="loginForm" class="chimp.ui.security.LoginForm" />
+    <bean id="mainForm" class="chimp.ui.general.ApplicationMainForm" />
+
+</beans>
