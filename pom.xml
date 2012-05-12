@@ -8,10 +8,6 @@
     <artifactId>koalafication</artifactId>
     <packaging>pom</packaging>
     <version>1.0</version>
-    <modules>
-        <module>Compozite</module>
-        <module>Prototype_1</module>
-    </modules>
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>

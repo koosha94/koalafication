@@ -4,6 +4,7 @@ import chimp.service.ServiceException;
 import chimp.service.context.ServiceContext;
 import chimp.service.context.ServiceContextAware;
 import chimp.service.security.LoginServiceMessage;
+import chimp.ui.Administrator.AdminMainWindow;
 import chimp.ui.api.Form;
 import chimp.ui.api.components.ImagePanel;
 import chimp.ui.api.context.FormContext;
@@ -86,7 +87,12 @@ public class LoginForm implements ServiceContextAware, Form, FormContextAware, C
                     return;
                 }
                 hide();
-                formContext.show(ApplicationMainForm.class);
+                if(screenNameField.getText().equals("admin")){
+                    formContext.show(AdminMainWindow.class);
+                }
+                else{
+                    formContext.show(ApplicationMainForm.class);
+                }
             }
 
         });

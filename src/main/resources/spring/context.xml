@@ -6,7 +6,7 @@
     <bean class="chimp.service.context.DefaultServiceContext" />
     <bean class="chimp.ui.api.context.DefaultFormContext" id="formContext"/>
     <bean class="chimp.ui.api.DefaultRunner" id="runner">
-        <constructor-arg index="0" ref="userListView"/>
+        <constructor-arg index="0" ref="loginForm"/>
         <constructor-arg index="1" ref="callback" />
     </bean>
 
@@ -21,4 +21,5 @@
     <bean id="loginForm" class="chimp.ui.security.LoginForm" />
     <bean id="mainForm" class="chimp.ui.general.ApplicationMainForm" />
     <bean id="inspector" class="chimp.ui.Inspector.Inspector"/>
+    <bean id="adminMainWindow" class="chimp.ui.Administrator.AdminMainWindow"/>
 </beans>

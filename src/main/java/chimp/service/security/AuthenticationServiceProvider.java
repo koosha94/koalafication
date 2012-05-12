@@ -11,9 +11,14 @@ public class AuthenticationServiceProvider implements ServiceProvider<LoginServi
 
     @Override
     public void execute(LoginServiceMessage message) throws ServiceException {
-        if (!message.getUsername().equals("milad") || !message.getPassword().equals("123456")) {
-            throw new AuthenticationFailureException();
+        if (message.getUsername().equals("koosha") && message.getPassword().equals("123456")) {
+           return;
         }
+        if (message.getUsername().equals("admin") && message.getPassword().equals("admin")) {
+            return;
+        }
+        throw new AuthenticationFailureException();
     }
+
 
 }
