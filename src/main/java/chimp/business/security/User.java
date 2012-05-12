@@ -5,7 +5,6 @@ package chimp.business.security;
  * @since 1.0 (12/5/6, 18:35)
  */
 public class User {
-
-
-
+    public User() {
+    }
 }
