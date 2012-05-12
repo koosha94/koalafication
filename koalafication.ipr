@@ -40,6 +40,8 @@
     <option name="ignoredFiles">
       <set>
         <option value="$USER_HOME$/Desktop/OOD/test/pom.xml" />
+        <option value="$PROJECT_DIR$/Compozite/pom.xml" />
+        <option value="$PROJECT_DIR$/Prototype_1/pom.xml" />
         <option value="$PROJECT_DIR$/chimp/pom.xml" />
       </set>
     </option>
@@ -216,8 +218,6 @@
   </component>
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Compozite/Compozite.iml" filepath="$PROJECT_DIR$/Compozite/Compozite.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Prototype_1/Prototype_1.iml" filepath="$PROJECT_DIR$/Prototype_1/Prototype_1.iml" />
       <module fileurl="file://$PROJECT_DIR$/koalafication.iml" filepath="$PROJECT_DIR$/koalafication.iml" />
     </modules>
   </component>
