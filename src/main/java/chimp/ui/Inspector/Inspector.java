@@ -28,7 +28,7 @@ import java.awt.event.ActionListener;
 public class Inspector implements ServiceProvider<InspectorServiceMessage>,Form,FormContextAware,ApplicationContextAware{
     private JPanel Value;
     private JPanel Action;
-    private JTabbedPane Tabs;
+    public JTabbedPane Tabs;
     private JTree tree1;
     private JTextField textField1;
     private JTextField textField2;
